@@ -41,6 +41,7 @@ namespace CihanModernUI
             pictureBox7.Visible = false;
             pictureBox8.Visible = false;
             pictureBox9.Visible = false;
+            pictureBox10.Visible = false;
             panel4.Controls.Clear();
             Form3 form3 = new Form3();
             form3.TopLevel = false;
@@ -229,6 +230,11 @@ namespace CihanModernUI
             form8.Show();
             form8.Dock = DockStyle.Fill;
             form8.BringToFront();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

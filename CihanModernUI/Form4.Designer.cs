@@ -66,7 +66,6 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -465,7 +464,6 @@
             this.label11.Size = new System.Drawing.Size(54, 17);
             this.label11.TabIndex = 20;
             this.label11.Text = "label11";
-            this.label11.Visible = false;
             // 
             // label12
             // 
@@ -475,13 +473,6 @@
             this.label12.Size = new System.Drawing.Size(54, 17);
             this.label12.TabIndex = 20;
             this.label12.Text = "label11";
-            this.label12.Visible = false;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(496, 18);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 21;
             // 
             // Form4
             // 
@@ -489,7 +480,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(800, 673);
-            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dateTimePicker2);
@@ -570,6 +560,5 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
