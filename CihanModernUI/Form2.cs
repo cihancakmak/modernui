@@ -93,6 +93,7 @@ namespace CihanModernUI
             pictureBox7.Visible = false;
             pictureBox8.Visible = false;
             pictureBox9.Visible = false;
+            pictureBox10.Visible = false;
             panel4.Controls.Clear();
             Form3 form3 = new Form3();
             form3.TopLevel = false;
@@ -109,6 +110,7 @@ namespace CihanModernUI
             pictureBox7.Visible = true;
             pictureBox8.Visible = false;
             pictureBox9.Visible = false;
+            pictureBox10.Visible = false;
             panel4.Controls.Clear();
             Form4 form4 = new Form4();
             form4.TopLevel = false;
@@ -124,6 +126,7 @@ namespace CihanModernUI
             pictureBox7.Visible = false;
             pictureBox8.Visible = true;
             pictureBox9.Visible = false;
+            pictureBox10.Visible = false;
             panel4.Controls.Clear();
             Form6 form6 = new Form6();
             form6.TopLevel = false;
@@ -139,6 +142,7 @@ namespace CihanModernUI
             pictureBox7.Visible = false;
             pictureBox8.Visible = false;
             pictureBox9.Visible = true;
+            pictureBox10.Visible = false;
             panel4.Controls.Clear();
             Form5 form5 = new Form5();
             form5.TopLevel = false;
@@ -208,6 +212,23 @@ namespace CihanModernUI
         private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            pictureBox6.Visible = false;
+            pictureBox7.Visible = false;
+            pictureBox8.Visible = false;
+            pictureBox9.Visible = false;
+            pictureBox10.Visible = true;
+
+            panel4.Controls.Clear();
+            Form8 form8 = new Form8();
+            form8.TopLevel = false;
+            panel4.Controls.Add(form8);
+            form8.Show();
+            form8.Dock = DockStyle.Fill;
+            form8.BringToFront();
         }
     }
 }

@@ -66,6 +66,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -79,10 +82,15 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox10);
+            this.panel1.Controls.Add(this.pictureBox11);
+            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(listBox1);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.groupBox4);
@@ -102,7 +110,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(262, 759);
+            this.panel1.Size = new System.Drawing.Size(262, 874);
             this.panel1.TabIndex = 0;
             // 
             // listBox1
@@ -112,7 +120,7 @@
             listBox1.ForeColor = System.Drawing.Color.White;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 19;
-            listBox1.Location = new System.Drawing.Point(14, 357);
+            listBox1.Location = new System.Drawing.Point(8, 470);
             listBox1.Name = "listBox1";
             listBox1.Size = new System.Drawing.Size(237, 118);
             listBox1.TabIndex = 11;
@@ -124,7 +132,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 8.25F);
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(14, 708);
+            this.button8.Location = new System.Drawing.Point(8, 821);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(237, 41);
             this.button8.TabIndex = 10;
@@ -140,13 +148,13 @@
             this.groupBox4.Controls.Add(this.label43);
             this.groupBox4.Controls.Add(label31);
             this.groupBox4.Controls.Add(label40);
-            this.groupBox4.Controls.Add(label32);
+            this.groupBox4.Controls.Add(this.label32);
             this.groupBox4.Controls.Add(label33);
             this.groupBox4.Controls.Add(label36);
             this.groupBox4.Controls.Add(label35);
             this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 8.25F);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(14, 493);
+            this.groupBox4.Location = new System.Drawing.Point(8, 606);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(237, 197);
             this.groupBox4.TabIndex = 10;
@@ -511,7 +519,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(262, 103);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(832, 656);
+            this.panel4.Size = new System.Drawing.Size(832, 771);
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -521,12 +529,47 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::CihanModernUI.Properties.Resources.aktif;
+            this.pictureBox10.Location = new System.Drawing.Point(211, 358);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 12;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(14, 358);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 13;
+            this.pictureBox11.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(0, 351);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(262, 62);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "Ayrıntılı Üye Listesi";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(1094, 759);
+            this.ClientSize = new System.Drawing.Size(1094, 874);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -552,6 +595,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -588,6 +633,9 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Button button7;
         public static System.Windows.Forms.Label label31;
         public static System.Windows.Forms.Label label40;
         public static System.Windows.Forms.Label label33;

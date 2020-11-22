@@ -67,7 +67,21 @@ namespace CihanModernUI
             OleDbConnection con = new OleDbConnection();
             con.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\VeriTabani\Database1.accdb;Persist Security Info=False;";
             con.Open();
-            OleDbCommand kmt = new OleDbCommand("insert into uyeler(Ad,Soyad,TCKimlik,Telefon,AcilTelefon,Eposta,Adres,Cinsiyet,KanGrubu,Süresi,OdemeSekli,Tarih) values('"+textBox1.Text+ "' , '" + textBox2.Text + "' , '" + textBox3.Text + "' , '" + textBox4.Text + "' , '" + textBox6.Text + "' , '" + textBox7.Text + comboBox3.SelectedItem + "' , '" + textBox5.Text + "' , '" + Cinsiyet + "', '" + KanGrubu + "', '" + comboBox1.SelectedItem + "', '" + comboBox2.SelectedItem + "', '" + label7.Text + "')", con);
+            OleDbCommand kmt = new OleDbCommand("insert into uyeler(Ad,Soyad,TCKimlik,Telefon,AcilTelefon,Eposta,Adres,Cinsiyet,KanGrubu,Süresi,OdemeSekli,Tarih,BaslangicTarihi,BitisTarihi)" +
+                " values('" + textBox1.Text + "' " +
+                ", '" + textBox2.Text + "' " +
+                ", '" + textBox3.Text + "' " +
+                ", '" + textBox4.Text + "' " +
+                ", '" + textBox6.Text + "' " +
+                ", '" + textBox7.Text + comboBox3.SelectedItem + "'" +
+                ", '" + textBox5.Text + "' " +
+                ", '" + Cinsiyet + "'" +
+                ", '" + KanGrubu + "'" +
+                ", '" + comboBox1.SelectedItem + "'" +
+                ", '" + comboBox2.SelectedItem + "'" +
+                ", '" + label7.Text + "' " +
+                ", '" + label11.Text + "' " +
+                ", '" + label12.Text + "' )", con);
             kmt.ExecuteNonQuery();
             MessageBox.Show("Kayıt Edildi.");
 
@@ -78,5 +92,12 @@ namespace CihanModernUI
         {
             label7.Text = DateTime.Now.ToLongDateString();
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            label11.Text = dateTimePicker1.Text;
+            label12.Text = dateTimePicker2.Text;
+        }
+
     }
 }
